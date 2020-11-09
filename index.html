@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" type="text/css" href="./css/estilos.css">
+    </head>
+    <body>
+        <div class="header">
+                <h2>Compactador de residuos</h2>
+                <img class="head1" src="./img/header.png">
+        </div>
+        <div id="navbar">
+            <a class="active" href="javascript:void(0)">Inicio</a>
+            <a href="javascript:void(0)">Servicio</a>
+            <a href="javascript:void(0)">Productos</a>
+            <a href="javascript:void(0)">Contáctenos</a>
+        </div>
+        <div class="content-container">  
+          <div class="content_1">
+            <h3>SECCIÓN 1</h3>
+            <img src="./img/1.png">          
+          </div>
+          <div class="content_2">
+            <h3>SECCIÓN 2</h3>            
+          </div>
+        </div>  
+          <script>
+          window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+  }
+}
+          </script>  
+    </body>
+
+</html>
